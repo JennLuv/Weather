@@ -45,12 +45,20 @@ struct WeatherCardComponentView: View {
                 Spacer()
                 
                 VStack {
-                    Image(systemName: viewModel.image)
-                        .symbolRenderingMode(viewModel.renderingMode)
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundColor(viewModel.symbolColor)
-                        .shadow(radius: 3)
+                    switch viewModel.weather.type {
+                    case .rainThunderLight:
+                        Image(viewModel.image)
+                            .resizable()
+                            .scaledToFit()
+                            .shadow(radius: 3)
+                    default:
+                        Image(systemName: viewModel.image)
+                            .symbolRenderingMode(viewModel.renderingMode)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundStyle(viewModel.symbolColor[0],viewModel.symbolColor[1])
+                            .shadow(radius: 3)
+                    }
                     
                     ZStack {
                         Text(viewModel.status)

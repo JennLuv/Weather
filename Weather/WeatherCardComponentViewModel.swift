@@ -41,23 +41,26 @@ class WeatherCardComponentViewModel: ObservableObject{
         case .nightLight: "moon.stars.fill"
         case .sunnyLight: "sun.max.fill"
         case .rainLight: "cloud.rain.fill"
-        case .rainThunderLight: "cloud.bolt.rain.fill"
+        case .rainThunderLight: "cloudThunder"
         }
     }
     
     var renderingMode: SymbolRenderingMode {
         switch weather.type {
-        case .cloudyLight, .nightLight, .sunnyLight, .rainLight, .rainThunderLight: .multicolor
+        case .cloudyLight, .nightLight, .sunnyLight, .rainThunderLight: .multicolor
+        case .rainLight: .palette
         case .cloudyNightLight: .hierarchical
         }
     }
     
-    var symbolColor: Color {
+    var symbolColor: [Color] {
             switch weather.type {
-            case .cloudyLight, .nightLight, .sunnyLight, .rainLight, .rainThunderLight:
-                return .primary
+            case .cloudyLight, .nightLight, .sunnyLight, .rainThunderLight:
+                return [.primary, .primary]
+            case .rainLight:
+                return [.white, .mayaBlue]
             case .cloudyNightLight:
-                return .white
+                return [.white, .white]
             }
         }
     
