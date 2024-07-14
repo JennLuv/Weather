@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "cloud.sun.fill 4.png",
+      "filename" : "cloud.bolt.rain.fill 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "cloud.sun.fill 5.png",
+      "filename" : "cloud.bolt.rain.fill 3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
