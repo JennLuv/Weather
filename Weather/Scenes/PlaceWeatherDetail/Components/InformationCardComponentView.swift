@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct InformationCardComponentView: View {
-    @StateObject var aqiInfo = AQIInformation(id: 0, range: "", level: "", information: "")
+    var Info = ""
     
     var body: some View {
         ZStack {
             VStack {
                 HStack {
-                    Text(aqiInfo.generalInformation)
+                    Text(Info)
                         .font(.subheadline)
                     Spacer()
                 }

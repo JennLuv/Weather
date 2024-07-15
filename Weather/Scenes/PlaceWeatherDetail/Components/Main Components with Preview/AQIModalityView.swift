@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ModalityView: View {
-    @StateObject var aqiInfo = AQIInformation(id: 0, range: "", level: "", information: "")
+struct AQIModalityView: View {
+    var aqiInfo = AQIInformation(id: 0, range: "", level: "", information: "")
     
     var body: some View {
         ScrollView {
@@ -22,7 +22,7 @@ struct ModalityView: View {
                 }
             }
             
-            InformationCardComponentView()
+            InformationCardComponentView(Info: aqiInfo.generalInformation)
                 .padding(.bottom)
             
             HStack {
@@ -42,5 +42,5 @@ struct ModalityView: View {
 }
 
 #Preview {
-    ModalityView()
+    AQIModalityView()
 }

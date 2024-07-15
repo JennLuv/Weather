@@ -5,9 +5,9 @@
 //  Created by Jennifer Luvindi on 15/07/24.
 //
 
-import SwiftUI
+import Foundation
 
-class AQIInformation: ObservableObject {
+struct AQIInformation {
     var id: Int
     var range: String
     var level: String
