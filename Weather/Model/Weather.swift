@@ -31,12 +31,6 @@ class Weather: Identifiable {
     
 }
 
-enum Status: String {
-    case safe = "Safe"
-    case caution = "Caution"
-    case unsafe = "Unsafe"
-}
-
 enum weatherType{
     case cloudyLight
     case cloudyNightLight
