@@ -32,8 +32,8 @@ struct SafetyStatusModalityView: View {
             }
             
             SafetyStatusCardComponentView( status: StatusSafe())
-            SafetyStatusCardComponentView( status: StatusUnsafe())
             SafetyStatusCardComponentView( status: StatusCaution())
+            SafetyStatusCardComponentView( status: StatusUnsafe())
         }
         .ignoresSafeArea()
         .padding()
