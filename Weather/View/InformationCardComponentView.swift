@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct AQIInformationCardComponentView: View {
+struct InformationCardComponentView: View {
+    @StateObject var aqiInfo = AQIInformation(id: 0, range: "", level: "", information: "")
+    
     var body: some View {
         ZStack {
             VStack {
                 HStack {
-                    Text("The Air Quality Index (AQI) is a scale used to measure and report air quality levels. It indicates how clean or polluted the air is and what associated health effects might be a concern for the public. Higher AQI values represent higher levels of air pollution and greater health risks.")
+                    Text(aqiInfo.generalInformation)
                         .font(.subheadline)
                     Spacer()
                 }
@@ -28,5 +30,5 @@ struct AQIInformationCardComponentView: View {
 }
 
 #Preview {
-    AQIInformationCardComponentView()
+    InformationCardComponentView()
 }

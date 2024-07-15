@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AQIModalityView: View {
+struct ModalityView: View {
     @StateObject var aqiInfo = AQIInformation(id: 0, range: "", level: "", information: "")
     
     var body: some View {
@@ -22,7 +22,7 @@ struct AQIModalityView: View {
                 }
             }
             
-            AQIInformationCardComponentView()
+            InformationCardComponentView()
                 .padding(.bottom)
             
             HStack {
@@ -33,7 +33,7 @@ struct AQIModalityView: View {
             }
             
             ForEach(aqiInfo.getAQIInformation(), id: \.range) { info in
-                AQILevelCardComponentView(aqiInfo: info)
+                LevelCardComponentView(aqiInfo: info)
             }
         }
         .ignoresSafeArea()
@@ -42,5 +42,5 @@ struct AQIModalityView: View {
 }
 
 #Preview {
-    AQIModalityView()
+    ModalityView()
 }

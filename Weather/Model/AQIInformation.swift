@@ -12,6 +12,7 @@ class AQIInformation: ObservableObject {
     var range: String
     var level: String
     var information: String
+    var generalInformation: String = "The Air Quality Index (AQI) is a scale used to measure and report air quality levels. It indicates how clean or polluted the air is and what associated health effects might be a concern for the public. Higher AQI values represent higher levels of air pollution and greater health risks."
     
     init(id: Int, range: String, level: String, information: String) {
         self.id = id
