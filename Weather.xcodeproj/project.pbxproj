@@ -16,6 +16,10 @@
 		353A6E7F2C43BBB300A3EFA4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6E7E2C43BBB300A3EFA4 /* Weather.swift */; };
 		353A6E872C44105400A3EFA4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6E862C44105400A3EFA4 /* ContentViewModel.swift */; };
 		356A13592C44FAFF00A2E0E2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A13582C44FAFF00A2E0E2 /* Status.swift */; };
+		356A135B2C4500DD00A2E0E2 /* AQILevelCardComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A135A2C4500DD00A2E0E2 /* AQILevelCardComponentView.swift */; };
+		356A135D2C45073900A2E0E2 /* AQIInformationCardComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A135C2C45073900A2E0E2 /* AQIInformationCardComponentView.swift */; };
+		356A135F2C4508F200A2E0E2 /* AQIInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A135E2C4508F200A2E0E2 /* AQIInformation.swift */; };
+		356A13612C450A2700A2E0E2 /* AQIModalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A13602C450A2700A2E0E2 /* AQIModalityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		353A6E7E2C43BBB300A3EFA4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		353A6E862C44105400A3EFA4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		356A13582C44FAFF00A2E0E2 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		356A135A2C4500DD00A2E0E2 /* AQILevelCardComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQILevelCardComponentView.swift; sourceTree = "<group>"; };
+		356A135C2C45073900A2E0E2 /* AQIInformationCardComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIInformationCardComponentView.swift; sourceTree = "<group>"; };
+		356A135E2C4508F200A2E0E2 /* AQIInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIInformation.swift; sourceTree = "<group>"; };
+		356A13602C450A2700A2E0E2 /* AQIModalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIModalityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				353A6E732C43B16800A3EFA4 /* WeatherCardComponentView.swift */,
+				356A135A2C4500DD00A2E0E2 /* AQILevelCardComponentView.swift */,
+				356A13602C450A2700A2E0E2 /* AQIModalityView.swift */,
+				356A135C2C45073900A2E0E2 /* AQIInformationCardComponentView.swift */,
 				353A6E672C43B12500A3EFA4 /* ContentView.swift */,
 			);
 			path = View;
@@ -102,6 +113,7 @@
 			children = (
 				353A6E7E2C43BBB300A3EFA4 /* Weather.swift */,
 				356A13582C44FAFF00A2E0E2 /* Status.swift */,
+				356A135E2C4508F200A2E0E2 /* AQIInformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,12 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356A13612C450A2700A2E0E2 /* AQIModalityView.swift in Sources */,
 				353A6E682C43B12500A3EFA4 /* ContentView.swift in Sources */,
 				353A6E662C43B12500A3EFA4 /* WeatherApp.swift in Sources */,
 				356A13592C44FAFF00A2E0E2 /* Status.swift in Sources */,
+				356A135F2C4508F200A2E0E2 /* AQIInformation.swift in Sources */,
 				353A6E872C44105400A3EFA4 /* ContentViewModel.swift in Sources */,
+				356A135D2C45073900A2E0E2 /* AQIInformationCardComponentView.swift in Sources */,
 				353A6E742C43B16800A3EFA4 /* WeatherCardComponentView.swift in Sources */,
 				353A6E7F2C43BBB300A3EFA4 /* Weather.swift in Sources */,
+				356A135B2C4500DD00A2E0E2 /* AQILevelCardComponentView.swift in Sources */,
 				353A6E762C43B45000A3EFA4 /* WeatherCardComponentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
